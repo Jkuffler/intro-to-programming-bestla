@@ -40,17 +40,17 @@ Now, open the project directory in your code editor and continue to the next sec
 
 ### Task List:
 
-- [ ] Open your `index.html` file
+- [x ] Open your `index.html` file
 
-- [ ] Add the phrase "About"
-- [ ] Below that, write a paragraph about yourself
-- [ ] Add the phrase "Experience"
-- [ ] Below that, write a list of places you've worked or projects you've worked on
-- [ ] Add the phrase "Connect"
-- [ ] Below that, paste links to your email, GitHub, social media, etc.
+- [ x] Add the phrase "About"
+- [ x] Below that, write a paragraph about yourself
+- [x ] Add the phrase "Experience"
+- [ x] Below that, write a list of places you've worked or projects you've worked on
+- [ x] Add the phrase "Connect"
+- [x ] Below that, paste links to your email, GitHub, social media, etc.
 
-- [ ] Copy the file path to your `index.html` file
-- [ ] Paste the path in your web browser and you should see all the text you just wrote
+- [ x] Copy the file path to your `index.html` file
+- [ x] Paste the path in your web browser and you should see all the text you just wrote
 
 Next week we will learn how to structure this content!
 
