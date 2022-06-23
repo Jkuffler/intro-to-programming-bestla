@@ -49,8 +49,8 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ x] Add the phrase "Connect"
 - [x ] Below that, paste links to your email, GitHub, social media, etc.
 
-- [ ] Copy the file path to your `index.html` file
-- [ ] Paste the path in your web browser and you should see all the text you just wrote
+- [ x] Copy the file path to your `index.html` file
+- [ x] Paste the path in your web browser and you should see all the text you just wrote
 
 Next week we will learn how to structure this content!
 
