@@ -56,19 +56,19 @@ Now, open the project directory in your code editor and continue to the next sec
 
 - [x ] Create a new date object and store it in a variable named `today`
   - hint: `new Date()` constructor
-- [x] Retrieve the current year from your date object and store it in a variable named `thisYear`
+- [x ] Retrieve the current year from your date object and store it in a variable named `thisYear`
   - hint: `getFullYear` method
 
-- [ ] Using "DOM Selection", select the `<footer>` element from the DOM and store it in a variable named `footer`
+- [x ] Using "DOM Selection", select the `<footer>` element from the DOM and store it in a variable named `footer`
   - hint: `querySelector` method
-- [ ] Create a new paragraph (`p`) element and store it in a variable named `copyright`
+- [ x] Create a new paragraph (`p`) element and store it in a variable named `copyright`
   - hint: `createElement` method
 - [ ] Set the inner HTML of your `copyright` element to display your name and the current year
   - hint: use `thisYear` variable from earlier
-- [ ] Using "DOM Manipulation", append the `copyright` element to the footer
+- [x ] Using "DOM Manipulation", append the `copyright` element to the footer
   - hint: `appendChild` method
-- [ ] Save and refresh your browser
-  - You should see the text "Your Name 2021" at the bottom of the page
+- [x ] Save and refresh your browser
+  - You should see the text "Your Name 2022" at the bottom of the page
 
 #### Add Skills Section
 
