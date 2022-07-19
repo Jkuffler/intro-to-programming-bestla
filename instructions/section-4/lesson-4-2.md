@@ -72,11 +72,11 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Add Skills Section
 
-- [ ] Open your `index.html` file
-- [ ] Above the "Connect" section, add a new `<section>` element with an `id` attribute of value "skills"
-- [ ] Inside the new section, add a `<h2>` element that says "Skills"
-- [ ] After the `<h2>` element, add an empty unordered list (`<ul>`) element
-- [ ] Save and refresh your browser
+- [ x] Open your `index.html` file
+- [x ] Above the "Connect" section, add a new `<section>` element with an `id` attribute of value "skills"
+- [x ] Inside the new section, add a `<h2>` element that says "Skills"
+- [x ] After the `<h2>` element, add an empty unordered list (`<ul>`) element
+- [x ] Save and refresh your browser
   - You should see the new "Skills" heading
 
 #### Create List of Skills
