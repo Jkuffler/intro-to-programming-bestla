@@ -21,3 +21,15 @@ for(let i=0; i < softSkills.length; i++) {
   skill.innerText = softSkills[i];
   skillsList.appendChild(skill);
 }
+
+const messageForm = document.getElementById('leave_message');
+messageForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let name = e.target.name.value;
+  let email = e.target.email.value;
+  let message = e.target.message.value;
+  messageForm.reset();
+  return console.log(name, email, message)
+  }
+)
+

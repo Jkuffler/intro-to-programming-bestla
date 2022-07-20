@@ -8,7 +8,7 @@
     <title>🦉Jason Küffler🦉</title>
     <!-- <link rel="stylesheet" href="./style.css">  -->
   </head>
-  <body> <header></header> <nav></nav>
+  <body> <header>Jason Küffler</header> <nav></nav>
     <main>
     <section>
       <h1>About</h1>
@@ -41,6 +41,22 @@
       </ul>
     </section>
   </main>
+  <section>
+    <h2>📟 Leave a message 📟</h2>
+    <form id="leave_message">
+      <label>Name</label>
+      <input name="name" type="text" placeholder="Name is required" required=true><br>
+      <label>Email</label> 
+      <input name="email" type="email" placeholder="Email is required" required=true><br>
+      <label>Message</label>
+      <input type="text" placeholder="Message" name="message" required=true><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <section id="messages">
+    <h2>📧 Messages 📧</h2>
+    <ul></ul>
+  </section>
   <footer id="footer"></footer>
   </body>
 </html>
