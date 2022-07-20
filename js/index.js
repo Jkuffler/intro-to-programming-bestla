@@ -25,11 +25,14 @@ for(let i=0; i < softSkills.length; i++) {
 const messageForm = document.getElementById('leave_message');
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  let name = e.target.name.value;
-  let email = e.target.email.value;
-  let message = e.target.message.value;
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const message = e.target.message.value;
+  const messageSection = document.getElementById('#messages');
+  const messageList = messageSection.getElementByTagName('ul');
+  const newMessage = document.createElement('li');
+  newMessage.innerHTML = <a href="mailto:"email> `${name}` </a>
   messageForm.reset();
   return console.log(name, email, message)
   }
 )
-
