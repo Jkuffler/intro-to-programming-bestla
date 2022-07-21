@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <script src="js/index.js" defer></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>🦉Jason Küffler🦉</title>
-    <!-- <link rel="stylesheet" href="./style.css">  -->
+    <!-- <link rel='stylesheet' href='./style.css'>  -->
   </head>
-  <body> <header></header> <nav></nav>
+  <body> <header>Jason Küffler</header> <nav></nav>
     <main>
     <section>
       <h1>About</h1>
@@ -17,30 +16,47 @@
     </section>
     <section>
       <h1>Experience</h1>
-      <ul class="exp">
-        <li>⏳ Currently ⏳ Mentor - <a href="https://codethedream.org"> Code The Dream</a> </li>  
+      <ul class='exp'>
+        <li>⏳ Currently ⏳ Mentor - <a href='https://codethedream.org'> Code The Dream</a> </li>  
       </ul>
-      <ul class="exp">
+      <ul class='exp'>
         <li>1 year bootcamp/self-taught developer in JavaScript and Javascript Frameworks. Projects built with: Ruby, Rails, SQL, Sinatra, Active Record, ReactJS, HTML, CSS</li>
         <li>⚗️ Bare necessities ⚗️ Github | VS-Code | bash | Postman | MVC | breakpoints/unit-tests | OOP Best Practices | SCRUM/Agile Methodologiess (hackathons/community projects) | Google Services</li>
       </ul>
-      <ul class="exp">
+      <ul class='exp'>
         <li>⌛ Previous careers ⌛ Barista/Eespresso Tech - 15 years | Auto Sales/Leasing - 3.5 years</li>
       </ul>
     </section>
-    <section id="skills">
+    <section id='skills'>
       <h2>Skills</h2>
       <ul></ul>
     </section>
     <section>
       <h1>Connect</h1>
-      <ul class="contacts">
-        <li class="link"><a href="https://github.com/jkuffler/">Github</a> </li>
-        <li class="link"><a href="https://www.linkedin.com/in/jason-kuffler">LinkedIn</a> </li>
-        <li class="link"><a href="https://medium.com/@jakuffler">Blog</a> </li>
+      <ul class='contacts'>
+        <li class='link'><a href='https://github.com/jkuffler/'>Github</a> </li>
+        <li class='link'><a href='https://www.linkedin.com/in/jason-kuffler'>LinkedIn</a> </li>
+        <li class='link'><a href='https://medium.com/@jakuffler'>Blog</a> </li>
       </ul>
     </section>
   </main>
-  <footer id="footer"></footer>
+  <section>
+    <h2>📟 Leave a message 📟</h2>
+    <form id='leave_message'>
+      <label>Name</label>
+      <input name='name' type='text' placeholder='Name is required' required=true><br>
+      <label>Email</label> 
+      <input name='email' type='email' placeholder='Email is required' required=true><br>
+      <label>Message</label>
+      <input type='text' placeholder='Message' name='message' required=true><br>
+      <button type='submit'>Submit</button>
+    </form>
+  </section>
+  <section id='messages'>
+    <h2>📧 Messages 📧</h2>
+    <ul></ul>
+  </section>
+  <footer id='footer'></footer>
+  <script src='js/index.js' ></script>
   </body>
 </html>
