@@ -93,7 +93,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ x] Using "DOM Selection", select the #messages section by `id` and store it in a variable named `messageSection`
 - [x ] Using "DOM Selection", query the `messageSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `messageList`
 - [ x] Create a new list item (`li`) element and store it in a variable named `newMessage`
-- [ ] On the next line, set the inner HTML of your `newMessage` element with the following information:
+- [x ] On the next line, set the inner HTML of your `newMessage` element with the following information:
   - `<a>` element that displays the "name" and links to the "email" (hint: use the `mailto:` prefix)
   - `<span>` element that displays the "message"
 - [ ] Create a new `<button>` element and store it in a variable named `removeButton`
