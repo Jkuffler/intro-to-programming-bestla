@@ -21,13 +21,14 @@ for(let i=0; i < softSkills.length; i++) {
   skill.innerText = softSkills[i];
   skillsList.appendChild(skill);
 }
-
+document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault();
+  document.getElementById('messages').style.display = 'block';
   const name = e.target.name.value;
   const email = e.target.email.value;
-  const message = e.target.message.value;
+  let message = e.target.message.value;
   const messageSection = document.getElementById('messages');
   const messageList = messageSection.querySelector('ul');
   const newMessage = document.createElement('li');
@@ -40,7 +41,15 @@ messageForm.addEventListener('submit', (e) => {
     const entry = removeButton.parentNode;
     entry.remove();
   })
+  const editButton = document.createElement('button');
+  editButton.innerText = 'Edit';
+  editButton.type = 'button';
+  editButton.addEventListener('click', (e) => {
+    message.innerHTML = e.target.value
+  })
+
   messageList.appendChild(newMessage);
   newMessage.appendChild(removeButton);
+  newMessage.appendChild(editButton);
   messageForm.reset();
 })
