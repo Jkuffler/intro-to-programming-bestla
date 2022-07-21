@@ -28,10 +28,11 @@ messageForm.addEventListener('submit', (e) => {
   const name = e.target.name.value;
   const email = e.target.email.value;
   const message = e.target.message.value;
-  const messageSection = document.getElementById('#messages');
-  const messageList = messageSection.getElementByTagName('ul');
+  const messageSection = document.getElementById('messages');
+  const messageList = messageSection.querySelector('ul');
   const newMessage = document.createElement('li');
-  newMessage.innerHTML = <a href="mailto:"email> `${name}` </a>
+  newMessage.innerHTML = `<a href="mailto:${email}> ${name} </a>
+  <span>${message}</span>`;
   messageForm.reset();
   return console.log(name, email, message)
   }
