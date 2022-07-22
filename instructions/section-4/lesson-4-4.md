@@ -54,8 +54,8 @@ For this assignment, there are some general requirements but the design is up to
 - [ x] Change the default text color
 - [x ] Customize the font family
   - (Optional) Load in a font family from [Google Fonts](https://fonts.google.com/)
-- [ ] Add spacing (padding/margin) between sections
-- [ ] Change the font size, weight, and color of all headings
+- [ x] Add spacing (padding/margin) between sections
+- [x ] Change the font size, weight, and color of all headings
 - [ ] Transform the "Experience" list items into styled blocks
 - [ ] Transform the "Skills" list items into styled blocks
 - [ ] Style the "Leave a Message" form elements

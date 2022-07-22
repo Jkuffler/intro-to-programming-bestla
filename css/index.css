@@ -1,6 +1,24 @@
 body {
-  background-color: rgb(121, 160, 117);
-  color: rgb(34, 0, 97);
-  /* font-family: ; */
+  background-color: #41854cfc;
+  color:#00154f;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
 
+section {
+  padding: 6px;
+  margin: 4px;
+}
+
+h1, h2 {
+  font-family:  'Island Moments', 'Courier New', Courier, monospace;
+  font-size: 44px;
+}
+
+ul.exp > li {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: solid;
 }
