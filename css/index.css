@@ -15,10 +15,20 @@ h1, h2 {
   font-size: 44px;
 }
 
-ul.exp > li {
+ul {
+  display: inline-block
+}
+
+li {
   display: flex;
   flex-direction: column;
   padding-top: 4px;
   padding-bottom: 4px;
   border: solid;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
 }
