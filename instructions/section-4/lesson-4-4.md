@@ -40,10 +40,10 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Create and Load Stylesheet
 
-- [ ] Create a folder called `css/`
-- [ ] Inside that folder, create a Cascading Style Sheets (CSS) file called `index.css`
-- [ ] Open your `index.html` file
-- [ ] Before the closing `</head>` tag, insert a `<link>` element with a `rel` attribute of "stylesheet" and an `href` attribute that specifies the relative path to your CSS file (i.e. `css/index.css`)
+- [x ] Create a folder called `css/`
+- [x ] Inside that folder, create a Cascading Style Sheets (CSS) file called `index.css`
+- [ x] Open your `index.html` file
+- [x ] Before the closing `</head>` tag, insert a `<link>` element with a `rel` attribute of "stylesheet" and an `href` attribute that specifies the relative path to your CSS file (i.e. `css/index.css`)
 - [ ] Save and open in your browser
 
 #### Write CSS

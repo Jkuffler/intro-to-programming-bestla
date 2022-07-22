@@ -46,7 +46,7 @@ const editButton = document.createElement('button');
 editButton.innerText = 'Edit';
 editButton.type = 'button';
 editButton.addEventListener('click', () => {
-  
+  //after solid testing based on research i'm better off finding a specific person or source. I've overthought this one cause I remember getting it correctly with ajax...
 })
 
 messageList.appendChild(newMessage);
