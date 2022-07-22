@@ -44,13 +44,13 @@ Now, open the project directory in your code editor and continue to the next sec
 - [x ] Inside that folder, create a Cascading Style Sheets (CSS) file called `index.css`
 - [ x] Open your `index.html` file
 - [x ] Before the closing `</head>` tag, insert a `<link>` element with a `rel` attribute of "stylesheet" and an `href` attribute that specifies the relative path to your CSS file (i.e. `css/index.css`)
-- [ ] Save and open in your browser
+- [x ] Save and open in your browser
 
 #### Write CSS
 
 For this assignment, there are some general requirements but the design is up to you! This is your chance to be creative and transform your webpage into a reflection of who you are.
 
-- [ ] Change the background color of the page body
+- [x ] Change the background color of the page body
 - [ ] Change the default text color
 - [ ] Customize the font family
   - (Optional) Load in a font family from [Google Fonts](https://fonts.google.com/)
