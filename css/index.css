@@ -27,8 +27,12 @@
   
 
 section {
-  padding: 0em;
-  margin: 0em;
+  padding: .20em;
+  margin: .20em;
+}
+
+p{
+  text-align: center;
 }
 
 h1, h2 {
@@ -62,7 +66,7 @@ a:visited {
 }
 
 form {
-  display: flex;
+  display: center;
   flex-flow: column wrap;
 }
 
@@ -75,19 +79,20 @@ form > label {
 form > input {
   display: flex;
   resize: vertical;
-  font-size: 1em;
-  margin-bottom: 1em;
-  padding-bottom:1em;
-  padding-top:1em;
-  border: solid 1em rgb(123, 206, 6);
+  font-size: default;
+  margin: 0.2em;
+  padding-bottom:0.2em;
+  padding-top:0.2em;
+  border: solid 0.4em rgb(123, 206, 6);
 }
 
 button[type=submit] {
   size: auto;
-  display: block;
-  padding: 1em;
+  display: flex;
+  align-items: flex;
+  padding: 0.4em;
   background-color:  rgb(123, 206, 6);
-  border: dashed dashed 1em rgba(123, 206, 6, 0.564);
+  border: dashed dashed 0.3em rgba(123, 206, 6, 0.564);
 }
 
 button {
@@ -97,8 +102,8 @@ button {
 #footer {
   text-align: center;
   font-size: 2em;
-  padding: 1, 0, 1, 0;
-  margin: auto;
+  padding: .1em;
+  margin: .4em;
   font-family: 'Island Moments', 'Arial';
-  background-color:rgba(123, 206, 6, 0.564)
+  background-color:rgba(123, 206, 6, 0.564);
 }
