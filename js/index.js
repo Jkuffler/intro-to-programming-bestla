@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector('#footer');
 
 const copyright = document.createElement('p');
-copyright.innerHTML = 'Jason Küffler ' + thisYear;
+copyright.innerHTML = 'Jason Küffler ' + thisYear+'©';
 footer.appendChild(copyright);
 
 const skillsSection = document.getElementById('skills')
@@ -36,6 +36,7 @@ const newMessage = document.createElement('li');
 newMessage.innerHTML = `<a href=mailto:${email}> ${name} </a> said:
 <span>${message}</span>`;
 const removeButton = document.createElement('button');
+removeButton.classList.add('message_button')
 removeButton.innerText = 'Remove';
 removeButton.type = 'button';
 removeButton.addEventListener('click', () => {
@@ -43,6 +44,7 @@ removeButton.addEventListener('click', () => {
   entry.remove();
 })
 const editButton = document.createElement('button');
+editButton.classList.add('message_button')
 editButton.innerText = 'Edit';
 editButton.type = 'button';
 editButton.addEventListener('click', () => {
