@@ -1,13 +1,13 @@
 body {
-  background-color: #41854cfc;
-  color:#00154f;
+  background-color: #00570efc;
+  color:#1eff00;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
 }
 
 section {
-  padding: 6px;
-  margin: 4px;
+  padding: 1px;
+  margin: 1px;
 }
 
 h1, h2 {
@@ -16,7 +16,8 @@ h1, h2 {
 }
 
 ul {
-  display: inline-block
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -24,11 +25,39 @@ li {
   flex-direction: column;
   padding-top: 4px;
   padding-bottom: 4px;
-  border: solid;
+  border-style: dashed solid;
   margin-bottom: 4px;
   text-align: center;
 }
 
 a:link {
+  color: rgb(129, 233, 141);
   text-decoration: none;
+}
+
+a:visited {
+  color: rgb(7, 193, 72);
+}
+
+form > label {
+  font-size: 22px;
+  margin-bottom: 10px;
+  padding-bottom:1px;
+  color: rgb(153, 255, 165);
+}
+form > input {
+  display: flex;
+  resize: vertical;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom:2px;
+  padding-top:2px;
+  border: solid 4px rgb(123, 206, 6);
+}
+
+button {
+  display: flex;
+  padding: 4px;
+  background-color:  rgb(123, 206, 6);
+  border: solid 8px rgba(123, 206, 6, 0.564);
 }

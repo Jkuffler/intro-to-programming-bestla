@@ -56,9 +56,7 @@ For this assignment, there are some general requirements but the design is up to
   - (Optional) Load in a font family from [Google Fonts](https://fonts.google.com/)
 - [ x] Add spacing (padding/margin) between sections
 - [x ] Change the font size, weight, and color of all headings
-- [ ] Transform the "Experience" list items into styled blocks
-- [ ] Transform the "Skills" list items into styled blocks
-- [ ] Style the "Leave a Message" form elements
+- [ x] Style the "Leave a Message" form elements
   - Change font size and color of labels
   - Change font size, padding, border, etc. of inputs and textarea
   - Add spacing (padding/margin) between form fields
