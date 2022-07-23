@@ -1,6 +1,6 @@
 @media only screen and (min-width: 300px){
   body {
-    background-color: #01420cfc;
+    background-color: #000000fc;
     color:#1eff00;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
@@ -11,7 +11,7 @@
   body {
     background-color: #01420cfc;
     color:#1eff00;
-    font-family: 'Island Moments', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
   }
 }
@@ -20,31 +20,47 @@
   body {
     background-color: #01420cfc;
     color:#1eff00;
-    font-family: 'Island Moments', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
   }
 }
 
-#nav{
+nav{
   background-color: #01420cfc;
-  text-align: left;
-  flex-direction: column;
+}
+
+#nav{
+  display: block;
+  background-color: #01420cfc;
+  text-align: center;
+  margin:1em;
+  padding:1em;
   position: sticky;
   top: 0;
 }
 
 
 section {
-  padding: 2em;
-  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #01420cfc;
+  padding: 1em;
+  margin: 1em;
+}
+
+li {
+  display: grid;
 }
 
 p{
   text-align: center;
+  margin: auto;
 }
 
 h1, h2 {
   font-size: 2.5em;
+  padding: 0.2em;
+  margin: 0;
   text-align: center;
   font-family:  'Island Moments', 'Courier New', Courier, monospace;
 }
@@ -55,16 +71,20 @@ ul {
 }
 
 li {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
   padding: auto;
   margin: auto;
   text-align: center;
 }
 
 a:link {
+  display: inline-flex;
+  flex-direction: row;
   color: rgb(129, 233, 141);
-  text-decoration: none;
+  background-color: #01420cfc;
+  text-decoration: center ;
+  padding-left: 0.1em;
 }
 
 a:visited {
@@ -72,9 +92,8 @@ a:visited {
 }
 
 form {
-  display: flex;
-  margin-left: 10%;
-  margin-right: -10%;
+  display: inline;
+  margin-left: 40%;
 }
 
 form > label {
@@ -85,17 +104,14 @@ form > label {
 }
 form > input {
   display: flex;
-  resize: vertical;
-  font-size: default;
+  flex-direction: column;
   margin: 0.2em;
   padding-bottom:0.2em;
   padding-top:0.2em;
 }
 
 button[type=submit] {
-  size: auto;
-  display: flex;
-  align-items: flex;
+  display: inline-block;
   padding: 0.4em;
   background-color:  rgb(123, 206, 6);
 }
