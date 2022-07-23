@@ -1,6 +1,6 @@
 @media only screen and (min-width: 300px){
   body {
-    background-color: #00570efc;
+    background-color: #01420cfc;
     color:#1eff00;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 650px){
   body {
-    background-color: #00570efc;
+    background-color: #01420cfc;
     color:#1eff00;
     font-family: 'Island Moments', Courier, monospace;
     font-size: 1em;
@@ -18,17 +18,25 @@
 
 @media only screen and (max-width: 1024px){
   body {
-    background-color: #00570efc;
+    background-color: #01420cfc;
     color:#1eff00;
     font-family: 'Island Moments', Courier, monospace;
     font-size: 1em;
   }
 }
-  
+
+#nav{
+  background-color: #01420cfc;
+  text-align: left;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+
 
 section {
-  padding: .20em;
-  margin: .20em;
+  padding: 2em;
+  margin: 2em;
 }
 
 p{
@@ -36,7 +44,7 @@ p{
 }
 
 h1, h2 {
-  font-size: 3.3em;
+  font-size: 2.5em;
   text-align: center;
   font-family:  'Island Moments', 'Courier New', Courier, monospace;
 }
@@ -50,8 +58,6 @@ li {
   display: flex;
   flex-direction: column;
   padding: auto;
-  border-style: dashed solid;
-  border-color: #02a81e;
   margin: auto;
   text-align: center;
 }
@@ -66,8 +72,9 @@ a:visited {
 }
 
 form {
-  display: center;
-  flex-flow: column wrap;
+  display: flex;
+  margin-left: 10%;
+  margin-right: -10%;
 }
 
 form > label {
@@ -83,7 +90,6 @@ form > input {
   margin: 0.2em;
   padding-bottom:0.2em;
   padding-top:0.2em;
-  border: solid 0.4em rgb(123, 206, 6);
 }
 
 button[type=submit] {
@@ -92,7 +98,6 @@ button[type=submit] {
   align-items: flex;
   padding: 0.4em;
   background-color:  rgb(123, 206, 6);
-  border: dashed dashed 0.3em rgba(123, 206, 6, 0.564);
 }
 
 button {
@@ -101,9 +106,9 @@ button {
 
 #footer {
   text-align: center;
-  font-size: 2em;
-  padding: .1em;
-  margin: .4em;
+  font-size: 1.8em;
+  padding: 0em;
+  margin: .1em;
   font-family: 'Island Moments', 'Arial';
-  background-color:rgba(123, 206, 6, 0.564);
+  background-color:#01420cfc;
 }

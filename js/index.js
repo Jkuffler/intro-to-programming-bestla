@@ -9,7 +9,7 @@ footer.appendChild(copyright);
 const skillsSection = document.getElementById('skills')
 const skillsList = skillsSection.querySelector('ul')
 let techSkills = ['HTML5', 'CSS', 'JavaScript', 'Google Services', 'Ruby/RoR', 'Postman', 'Debugging', 'Browser Dev Tools', 'Unit testing']
-let softSkills = ['Problem Solving', 'Analytical Thinking', 'Written Communication', 'Managment', 'Large Event Planning', 'Public Speaking', 'Substance Abuse Recovery']
+let softSkills = ['Problem Solving', 'Analytical Thinking', 'Written Communication', 'Managment', 'Large Event Planning', 'Public Speaking']
 
 for(let i=0; i < techSkills.length; i++) {
   const skill = document.createElement('li');

@@ -42,8 +42,8 @@ Now, open the project directory in your code editor and continue to the next sec
 
 For this assignment, you will be transforming your webpage with a more robust grid layout.
 
-- [ ] Add a navigational header to your webpage
-  - [ ] The navigation menu should include a link to each of your sections (i.e. "About", "Experience", etc.)
+- [x ] Add a navigational header to your webpage
+  - [x ] The navigation menu should include a link to each of your sections (i.e. "About", "Experience", etc.)
   - [ ] (Optional) Make the header sticky/fixed on the page
 - [ ] Change the layout of your "Experience" section using rows and columns so items are displayed in a grid rather than a list
   - [ ] Hint: use either Flexbox or CSS Grid
