@@ -101,21 +101,23 @@ button {
 }
 
 form {
-  display: inline-block;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 form > label {
+  margin: auto;
+  padding: auto;
+  text-align: center;
   font-size: 1em;
-  display: auto;
+  display: flex;
+  flex-direction: column;
   color: rgb(153, 255, 165);
 }
 form > input {
-  display: flex;
-  flex-direction: column;
-  margin: 0.4em;
-  padding-bottom:0.1em;
-  padding-top:0.1em;
+  margin: auto;
+  padding: auto;
+  text-align: center;
 }
 
 button[type=submit] {
