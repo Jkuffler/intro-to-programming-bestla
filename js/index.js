@@ -35,8 +35,8 @@ let message = e.target.message.value;
 const messageSection = document.getElementById('messages');
 const messageList = messageSection.querySelector('ul');
 const newMessage = document.createElement('li');
-newMessage.innerHTML = `<a href=mailto:${email}> ${name}: </a> 
-<span> said   ${message}  </span>`;
+newMessage.innerHTML = `<a href=mailto:${email}> ${name} </a> 
+<span> said:   ${message}  </span>`;
 const removeButton = document.createElement('button');
 removeButton.classList.add('message_button')
 removeButton.innerText = 'Remove';

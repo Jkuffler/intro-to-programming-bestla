@@ -38,17 +38,18 @@ nav{
   position: sticky;
   top: 0;
 }
-
+#exp {
+  display: grid;
+  gap: .2em;
+  height: auto;
+  grid-template-rows:auto;
+}
 section {
   display: flex;
   flex-direction: column;
   background-color: #01420cfc;
-  padding: 1em;
-  margin: 1em;
-}
-
-li {
-  display: grid;
+  padding: .5em;
+  margin: .5em;
 }
 
 p{
@@ -65,20 +66,24 @@ h1, h2 {
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  display: Flexbox;
+  list-style-type: arabic-indic;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 li {
-  display: inline-flex;
-  flex-direction: row;
-  padding: auto;
-  margin: auto;
-  text-align: center;
+  display: grid;
+  list-style-type: arabic-indic;
+  vertical-align: top;
 }
 
 a:link {
-  display: inline;
   color: rgb(129, 233, 141);
   background-color: #01420cfc;
   text-decoration: unset;
@@ -89,27 +94,30 @@ a:visited {
 }
 
 form {
-  display: inline;
-  margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 40%; */
 }
 
 form > label {
   font-size: 1em;
-  margin-bottom: 1em;
-  padding-bottom:1em;
+  margin-bottom: .1em;
+  padding-bottom: .1em;
   color: rgb(153, 255, 165);
 }
 form > input {
   display: flex;
   flex-direction: column;
-  margin: 0.2em;
-  padding-bottom:0.2em;
-  padding-top:0.2em;
+  margin: 0.4em;
+  /* padding-bottom:0.1em;
+  padding-top:0.1em; */
 }
 
 button[type=submit] {
-  display: inline-block;
-  padding: 0.4em;
+  display: flex;
+  padding-top: .5em;
+  flex-direction: column;
+  margin-left: 1em;
   background-color:  rgb(123, 206, 6);
 }
 
