@@ -33,12 +33,11 @@ nav{
   display: block;
   background-color: #01420cfc;
   text-align: center;
-  margin:1em;
-  padding:1em;
+  margin:.4em;
+  padding:.4em;
   position: sticky;
   top: 0;
 }
-
 
 section {
   display: flex;
@@ -79,15 +78,13 @@ li {
 }
 
 a:link {
-  display: inline-flex;
-  flex-direction: row;
+  display: inline;
   color: rgb(129, 233, 141);
   background-color: #01420cfc;
-  text-decoration: center ;
-  padding-left: 0.1em;
+  text-decoration: unset;
 }
 
-a:visited {
+a:visited { 
   color: rgb(7, 193, 72);
 }
 
@@ -122,9 +119,9 @@ button {
 
 #footer {
   text-align: center;
-  font-size: 1.8em;
-  padding: 0em;
-  margin: .1em;
+  font-size: 2.8em;
+  padding-bottom: .1em;
+  margin-bottom: .4em;
   font-family: 'Island Moments', 'Arial';
   background-color:#01420cfc;
 }

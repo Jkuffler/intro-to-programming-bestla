@@ -24,6 +24,8 @@ for(let i=0; i < softSkills.length; i++) {
 document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
 
+
+/*Messasges*/
 messageForm.addEventListener('submit', (e) => {
 e.preventDefault();
 document.getElementById('messages').style.display = 'block';
@@ -33,8 +35,8 @@ let message = e.target.message.value;
 const messageSection = document.getElementById('messages');
 const messageList = messageSection.querySelector('ul');
 const newMessage = document.createElement('li');
-newMessage.innerHTML = `<a href=mailto:${email}> ${name} </a> said:
-<span>${message}</span>`;
+newMessage.innerHTML = `<a href=mailto:${email}> ${name}: </a> 
+<span> said   ${message}  </span>`;
 const removeButton = document.createElement('button');
 removeButton.classList.add('message_button')
 removeButton.innerText = 'Remove';
