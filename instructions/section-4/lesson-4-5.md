@@ -48,7 +48,7 @@ For this assignment, you will be transforming your webpage with a more robust gr
 - [x ] Change the layout of your "Experience" section using rows and columns so items are displayed in a grid rather than a list
   - [x ] Hint: use either Flexbox or CSS Grid
 - [ x] Update the "Leave a Message" form to use Flexbox or CSS Grid
-- [ ] Use Media Queries to make sure the webpage is responsive for all device sizes (mobile, tablet, desktop, etc.)
+- [x ] Use Media Queries to make sure the webpage is responsive for all device sizes (mobile, tablet, desktop, etc.)
 
 This is the basic rubric, but we encourage you to think beyond this list and come up with your own ideas to make your webpage unique!
 
