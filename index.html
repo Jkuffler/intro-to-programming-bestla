@@ -5,43 +5,52 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>🦉Jason Küffler🦉</title>
-    <!-- <link rel='stylesheet' href='./style.css'>  -->
+    <link rel='stylesheet' href='css/index.css'> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Island+Moments">
+    
   </head>
-  <body> <header>Jason Küffler</header> <nav></nav>
+  <body> 
+    <header id='nav'>
+        <nav>
+            <a href='#about'>about</a> |
+            <a href='#exp'>experience</a> |
+            <a href='#skills'>tech & soft skills</a> |
+            <a href='#leave_message'>messages</a>
+          </ul>
+        </nav>
+    </header>
     <main>
-    <section>
-      <h1>About</h1>
-      <p>Born CO | Raised MD</p>
-      <p>Father | Ally to marginalized/oppressed | Lifelong learner | Technologist at heart | Chewbacca | Partner | Goofball</p>
+      
+    <section id='about'>
+      <h1 >about</h1>
+      <p>Jason Küffler - Born CO - Raised MD</p>
+      <p>Father | Ally | Forever learner | Technologist | ♡Partner♡ | Goofball</p>
     </section>
-    <section>
-      <h1>Experience</h1>
-      <ul class='exp'>
-        <li>⏳ Currently ⏳ Mentor - <a href='https://codethedream.org'> Code The Dream</a> </li>  
-      </ul>
-      <ul class='exp'>
-        <li>1 year bootcamp/self-taught developer in JavaScript and Javascript Frameworks. Projects built with: Ruby, Rails, SQL, Sinatra, Active Record, ReactJS, HTML, CSS</li>
+    <section id='exp'>
+      <h1>experience</h1>
+      <ul>
+        <li>⏳ Mentor ⏳ <a href='https://codethedream.org'> Code The Dream</a></li>  
+        <li> 📖 1 year bootcamp/self-taught developer in JavaScript and Javascript Frameworks 📝 Projects built with: Ruby | Rails | SQL | Sinatra | Active Record | ReactJS | HTML | CSS 📚</li>
         <li>⚗️ Bare necessities ⚗️ Github | VS-Code | bash | Postman | MVC | breakpoints/unit-tests | OOP Best Practices | SCRUM/Agile Methodologiess (hackathons/community projects) | Google Services</li>
-      </ul>
-      <ul class='exp'>
         <li>⌛ Previous careers ⌛ Barista/Eespresso Tech - 15 years | Auto Sales/Leasing - 3.5 years</li>
       </ul>
     </section>
     <section id='skills'>
-      <h2>Skills</h2>
+      <h1>skills</h1>
       <ul></ul>
     </section>
     <section>
-      <h1>Connect</h1>
+      <h2 id='connect'>connect</h2>
       <ul class='contacts'>
         <li class='link'><a href='https://github.com/jkuffler/'>Github</a> </li>
-        <li class='link'><a href='https://www.linkedin.com/in/jason-kuffler'>LinkedIn</a> </li>
+        <li class='link'><a href='https://www.linkedin.com/in/jason-kuffler'>LinkedIn</a></li>
         <li class='link'><a href='https://medium.com/@jakuffler'>Blog</a> </li>
       </ul>
     </section>
   </main>
   <section>
-    <h2>📟 Leave a message 📟</h2>
+    <h2>📟 Leave message 📟</h2>
     <form id='leave_message'>
       <label>Name</label>
       <input name='name' type='text' placeholder='Name is required' required=true><br>
@@ -53,8 +62,8 @@
     </form>
   </section>
   <section id='messages'>
-    <h2>📧 Messages 📧</h2>
-    <ul></ul>
+    <h2>📧 messages 📧</h2>
+    <ul class='messages'></ul>
   </section>
   <footer id='footer'></footer>
   <script src='js/index.js' ></script>
