@@ -47,6 +47,7 @@ nav{
 }
 section {
   display: grid;
+  align-items: center;
   grid-template-columns: auto;
   background-color: #000000fc;
   padding: .5em;
@@ -60,8 +61,8 @@ p{
 
 h1, h2 {
   font-size: 2.5em;
-  padding: 0.2em;
-  margin: 0;
+  padding: 0.4em;
+  margin: 0.3em;
   text-align: center;
   font-family:  'Island Moments', 'Courier New', Courier, monospace;
 }
@@ -97,6 +98,11 @@ button {
   padding: auto;
   text-align: center;
   background-color:  rgb(123, 206, 6);
+}
+
+form {
+  display: inline-block;
+  align-items: center;
 }
 
 form > label {
