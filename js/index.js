@@ -19,8 +19,17 @@ for(let i=0; i < techSkills.length; i++) {
 for(let i=0; i < softSkills.length; i++) {
   const skill = document.createElement('li');
   skill.innerText = softSkills[i];
-  skillsList.appendChild(skill);
+  skillsList.appendChild(skill);  
 }
+
+const githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/JKuffler/repos');
+githubRequest.send();
+githubRequest.addEventListener('load', function (e) { 
+  let repos = JSON.parse(this.response);
+  console.log(repos);
+});
+
 document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
 
@@ -45,16 +54,16 @@ removeButton.addEventListener('click', () => {
   const entry = removeButton.parentNode;
   entry.remove();
 })
-const editButton = document.createElement('button');
-editButton.classList.add('message_button')
-editButton.innerText = 'Edit';
-editButton.type = 'button';
-editButton.addEventListener('click', () => {
-  //after solid testing based on research i'm better off finding a specific person or source. I've overthought this one cause I remember getting it correctly with ajax...
-})
+// const editButton = document.createElement('button');
+// editButton.classList.add('message_button')
+// editButton.innerText = 'Edit';
+// editButton.type = 'button';
+// editButton.addEventListener('click', () => {
+//   after solid testing based on research i'm better off finding a specific person or source. I've overthought this one cause I remember getting it correctly with ajax...
+// })
 
 messageList.appendChild(newMessage);
 newMessage.appendChild(removeButton);
-newMessage.appendChild(editButton);
+// newMessage.appendChild(editButton);
 messageForm.reset();
 })
