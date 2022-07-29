@@ -76,15 +76,15 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Display Repositories in List
 
-- [ ] Start below the line of code you just wrote
-- [ ] Using "DOM Selection", select the #projects section by `id` and store it in a variable named `projectSection`
-- [ ] Using "DOM Selection", query the `projectSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `projectList`
-- [ ] Create a `for` loop to iterate over your `repositories` Array, starting at index 0
-- [ ] Inside the loop, create a new list item (`li`) element and store it in a variable named `project`
+- [ x] Start below the line of code you just wrote
+- [ x] Using "DOM Selection", select the #projects section by `id` and store it in a variable named `projectSection`
+- [ x] Using "DOM Selection", query the `projectSection` (instead of the entire `document`) to find the `<ul>` element and store it in a variable named `projectList`
+- [x ] Create a `for` loop to iterate over your `repositories` Array, starting at index 0
+- [ x] Inside the loop, create a new list item (`li`) element and store it in a variable named `project`
   - hint: `createElement` method
-- [ ] On the next line, set the inner text of your `project` variable to the current Array element's `name` property
+- [x ] On the next line, set the inner text of your `project` variable to the current Array element's `name` property
   - hint: access the Array element using bracket notation
-- [ ] On the next line, append the `project` element to the `projectList` element
+- [ x] On the next line, append the `project` element to the `projectList` element
   - hint: `appendChild` method
 - Save and refresh your browser
   - You should see your list of repositories beneath the "Projects" heading

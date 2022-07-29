@@ -7,9 +7,9 @@ copyright.innerHTML = 'Jason Küffler ' + thisYear+'©';
 footer.appendChild(copyright);
 
 const skillsSection = document.getElementById('skills')
-const skillsList = skillsSection.querySelector('ul')
-let techSkills = ['HTML5', 'CSS', 'JavaScript', 'Google Services', 'Ruby/RoR', 'Postman', 'Debugging', 'Browser Dev Tools', 'Unit testing']
-let softSkills = ['Problem Solving', 'Analytical Thinking', 'Written Communication', 'Managment', 'Large Event Planning', 'Public Speaking']
+const skillsList = skillsSection.querySelector('ul');
+let techSkills = ['HTML5', 'CSS', 'JavaScript', 'Google Services', 'Ruby/RoR', 'Postman', 'Debugging', 'Browser Dev Tools', 'Unit testing'];
+let softSkills = ['Problem Solving', 'Analytical Thinking', 'Written Communication', 'Managment', 'Large Event Planning', 'Public Speaking'];
 
 for(let i=0; i < techSkills.length; i++) {
   const skill = document.createElement('li');
@@ -25,10 +25,21 @@ for(let i=0; i < softSkills.length; i++) {
 const githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/JKuffler/repos');
 githubRequest.send();
-githubRequest.addEventListener('load', function (e) { 
+githubRequest.addEventListener('load', function () { 
   let repos = JSON.parse(this.response);
   console.log(repos);
+  const projectSection = document.getElementById('projects');
+  const projectsList = projectSection.querySelector('ul');
+  
+  for(let i=0; i < repos.length; i++) {
+    const project = document.createElement('li');
+    // project.innerText = repos[i].name;
+    project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + repos[i].name + `</a>`;
+    projectsList.appendChild(project);
+  }
 });
+
+
 
 document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
