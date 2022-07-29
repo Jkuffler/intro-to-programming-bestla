@@ -93,9 +93,9 @@ Now, open the project directory in your code editor and continue to the next sec
 
 These tasks are **entirely optional**, but if you'd like a challenge then do your best to complete each item.
 
-- [ ] (Optional) Transform your repository names into `<a>` tags that link to GitHub (hint: `html_url` property)
-- [ ] (Optional) Display additional information about your repositories (i.e. description, date, etc.)
-- [ ] (Optional) Customize the styling of your "Projects" section list
+- [ x] (Optional) Transform your repository names into `<a>` tags that link to GitHub (hint: `html_url` property)
+- [x ] (Optional) Display additional information about your repositories (i.e. description, date, etc.)
+- [ x] (Optional) Customize the styling of your "Projects" section list
 
 ### Final Step:
 

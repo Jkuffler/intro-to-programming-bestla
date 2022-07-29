@@ -33,7 +33,7 @@ githubRequest.addEventListener('load', function () {
   
   for(let i=0; i < repos.length; i++) {
     const project = document.createElement('li');
-    project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + `${repos[i].name} ` + new Date( `${repos[i].created_at}`).toDateString() + `</a>`;
+    project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + `${repos[i].name} ` +  `|Created| ` + new Date( `${repos[i].created_at}`).toDateString() + `</a>`;
     projectsList.appendChild(project);
   }
 });
