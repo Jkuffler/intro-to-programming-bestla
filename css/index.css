@@ -10,6 +10,7 @@
     font-size: 1em;
   }
 }
+
 @media only screen and (max-width: 650px){
   body {
     background-color: #000000fc;
@@ -37,18 +38,14 @@ body {
 	text-rendering: optimizeLegibility;
   }
 
-  #nav{
-    display: block;
-    text-align: right;
-    margin:.4rem;
-    padding:.4rem;
-    position: sticky;
-    top: 0;
-  }
-
-ul {
-  margin: 0;
-  }
+#nav{
+  display: block;
+  text-align: right;
+  margin:.4rem;
+  padding:.4rem;
+  position: sticky;
+  top: 0;
+}
 
 footer, header, nav, section {
 	display: block;
@@ -58,7 +55,7 @@ h1, h2 {
   margin: 0.6rem;
   font-family:  'Island Moments', 'Courier New', Courier, monospace;
 	font-size: 2.6rem;
-  }
+}
 
 p { 
 	-ms-word-break: break-all;
@@ -70,32 +67,32 @@ p {
 	hyphens: auto;
 }
 
-textarea { 
+/* textarea { 
 resize: vertical;
-  }
+  } */
 
 /* table { 
   border-collapse: collapse; 
-  }
+}
 
 td {
 	padding: .5rem;
-  } */
+} */
 
-  a:link {
-    color: rgb(129, 233, 141);
-  }
-  
-  a:visited { 
-    color: rgb(198, 125, 0);
-  }
+a:link {
+  color: #81e98d;
+}
+
+a:visited { 
+  color: #e39103;
+}
 
 img { 
 border: none;
 max-width: 100%;
-  }
+}
 
-  ul {
+ul {
     margin: 0.6rem;
     list-style-type: none;
     padding-inline-start: 0.6rem;
@@ -104,27 +101,43 @@ max-width: 100%;
 input[type="submit"]::-moz-focus-inner, 
 	input[type="button"]::-moz-focus-inner {
 		border : 0px;
+    color: #81e98d;
 }
 
-input[type="search"] { 
-  -webkit-appearance: textfield;
-  }
-input[type="submit"] { 
-	-webkit-appearance:none;
-  }
-  input:required:after {
-	color: #f00;
-	content: " *";
-  }
-input[type="email"]:invalid { 
-	background: #f00;
-  }
+/* input[type="search"] { 
+  -webkit-appearance: auto;
+} */
+
+form {
+  columns: 2;
+}
+
+input { 
+  margin-right: 2rem;
+  margin-top: 1rem;
+	background: #81e98d;
+}
+
+label{
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+button {
+  align-self:auto;
+  background: #47814d;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  margin-left: 7.5rem;
+  
+}
+
 sub, sup { 
-	line-height: 0;
-  }
+  line-height: 0;
+}
 
 #footer {
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.3rem;
   font-family: 'Island Moments', 'Arial';
 }
