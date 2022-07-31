@@ -1,3 +1,7 @@
+* { 
+	box-sizing: border-box;
+}
+
 @media only screen and (min-width: 300px){
   body {
     background-color: #000000fc;
@@ -6,7 +10,6 @@
     font-size: 1em;
   }
 }
-
 @media only screen and (max-width: 650px){
   body {
     background-color: #000000fc;
@@ -15,7 +18,6 @@
     font-size: 1em;
   }
 }
-
 @media only screen and (max-width: 1024px){
   body {
     background-color: #000000fc;
@@ -25,111 +27,104 @@
   }
 }
 
-nav{
-  background-color: #000000fc;
+html {
+	min-height: 100%;
+	background: #000;
 }
 
-#nav{
-  display: block;
-  background-color: #000000fc;
-  text-align: center;
-  margin:.4em;
-  padding:.4em;
-  position: sticky;
-  top: 0;
-}
+body {
+	font-size: 1rem;
+	text-rendering: optimizeLegibility;
+  }
 
-#projects {
-  display: grid;
-}
+  #nav{
+    display: block;
+    text-align: right;
+    margin:.4rem;
+    padding:.4rem;
+    position: sticky;
+    top: 0;
+  }
 
+ul {
+  margin: 0;
+  }
 
-section {
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto;
-  background-color: #000000fc;
-  padding: .5em;
-  margin: .5em;
-}
-
-p{
-  text-align: center;
-  margin: auto;
-  padding: .5em;
+footer, header, nav, section {
+	display: block;
 }
 
 h1, h2 {
-  font-size: 2.2em;
-  padding: 0.2em;
-  margin: 0.2em;
-  text-align: center;
+  margin: 0.6rem;
   font-family:  'Island Moments', 'Courier New', Courier, monospace;
+	font-size: 2.6rem;
+  }
+
+p { 
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
-ul {
-  margin: 0 auto;
-  text-align: center;
-  list-style-type: arabic-indic;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+textarea { 
+resize: vertical;
+  }
+
+/* table { 
+  border-collapse: collapse; 
+  }
+
+td {
+	padding: .5rem;
+  } */
+
+  a:link {
+    color: rgb(129, 233, 141);
+  }
+  
+  a:visited { 
+    color: rgb(198, 125, 0);
+  }
+
+img { 
+border: none;
+max-width: 100%;
+  }
+
+  ul {
+    margin: 0.6rem;
+    list-style-type: none;
+    padding-inline-start: 0.6rem;
 }
 
-li {
-  display: grid;
-  list-style-type: arabic-indic;
-  vertical-align: top;
+input[type="submit"]::-moz-focus-inner, 
+	input[type="button"]::-moz-focus-inner {
+		border : 0px;
 }
 
-a:link {
-  color: rgb(129, 233, 141);
-}
-
-a:visited { 
-  color: rgb(198, 125, 0);
-}
-
-button {
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  background-color:  rgb(123, 206, 6);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form > label {
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-  color: rgb(153, 255, 165);
-}
-form > input {
-  margin: auto;
-  padding: auto;
-  text-align: center;
-}
-
-button[type=submit] {
-  display: flex;
-  flex-direction: column;
-  background-color:  rgb(123, 206, 6);
-}
+input[type="search"] { 
+  -webkit-appearance: textfield;
+  }
+input[type="submit"] { 
+	-webkit-appearance:none;
+  }
+  input:required:after {
+	color: #f00;
+	content: " *";
+  }
+input[type="email"]:invalid { 
+	background: #f00;
+  }
+sub, sup { 
+	line-height: 0;
+  }
 
 #footer {
   text-align: center;
-  font-size: 2.8em;
-  padding-bottom: .1em;
-  margin-bottom: .4em;
+  font-size: 1.6em;
   font-family: 'Island Moments', 'Arial';
-  background-color:#01420cfc;
 }
