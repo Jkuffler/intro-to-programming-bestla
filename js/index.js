@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector('#footer');
 
 const copyright = document.createElement('p');
-copyright.innerHTML = 'Jason Küffler ' + thisYear+'©';
+copyright.innerHTML = 'Jason Küffler ' + thisYear+'©'+'           '+'<a href=#about>Top</a>';
 footer.appendChild(copyright);
 
 const skillsSection = document.getElementById('skills')
@@ -33,7 +33,7 @@ githubRequest.addEventListener('load', function () {
   
   for(let i=0; i < repos.length; i++) {
     const project = document.createElement('li');
-    project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + `${repos[i].name} ` +  `|Created| ` + new Date( `${repos[i].created_at}`).toDateString() + `</a>`;
+    project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + `  ${repos[i].name}  `.toString().slice(0, 22) +  `|Created| ` + new Date( `${repos[i].created_at}`).toDateString() + `</a>`;
     projectsList.appendChild(project);
   }
 });
@@ -47,7 +47,7 @@ const messageForm = document.getElementById('leave_message');
 /*Messasges*/
 messageForm.addEventListener('submit', (e) => {
 e.preventDefault();
-document.getElementById('messages').style.display = 'block';
+document.getElementById('messages').style.display = 'inline-block';
 const name = e.target.name.value;
 const email = e.target.email.value;
 let message = e.target.message.value;
@@ -59,7 +59,6 @@ newMessage.innerHTML = `<a href=mailto:${email}> ${name} </a>
 const removeButton = document.createElement('button');
 removeButton.classList.add('message_button')
 removeButton.innerText = 'Remove';
-removeButton.type = 'button';
 removeButton.addEventListener('click', () => {
   const entry = removeButton.parentNode;
   entry.remove();
