@@ -38,7 +38,13 @@ githubRequest.addEventListener('load', function () {
   }
 });
 
+const linkBadge = document.getElementById('link_badge');
 
+linkBadge.innerHTML = `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jason-kuffler" data-version="v1">
+<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jason-kuffler?trk=profile-badge"></a>
+</div>`
+
+linkBadge.appendChild();
 
 document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
