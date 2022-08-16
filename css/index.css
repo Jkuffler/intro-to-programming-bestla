@@ -109,7 +109,7 @@ input[type="submit"]::-moz-focus-inner,
 } */
 
 form {
-  columns: 2;
+  columns: 2  q;
 }
 
 input { 
