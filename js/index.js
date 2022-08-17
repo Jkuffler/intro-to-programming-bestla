@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector('#footer');
 
 const copyright = document.createElement('p');
-copyright.innerHTML = 'Jason Küffler ' + thisYear+'©'+'           '+'<a href=#about>Top</a>';
+copyright.innerHTML = 'Jason Küffler ' + thisYear+'©'+''+'<a href=#about>Top</a>';
 footer.appendChild(copyright);
 
 const skillsSection = document.getElementById('skills')
@@ -44,8 +44,6 @@ linkBadge.innerHTML = `<div class="badge-base LI-profile-badge" data-locale="en_
 <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jason-kuffler?trk=profile-badge"></a>
 </div>`
 
-linkBadge.appendChild();
-
 document.getElementById('messages').style.display = 'none';
 const messageForm = document.getElementById('leave_message');
 
@@ -79,6 +77,6 @@ removeButton.addEventListener('click', () => {
 
 messageList.appendChild(newMessage);
 newMessage.appendChild(removeButton);
-// newMessage.appendChild(editButton);
+newMessage.appendChild(editButton);
 messageForm.reset();
 })
