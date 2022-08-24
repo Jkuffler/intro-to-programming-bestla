@@ -22,11 +22,10 @@ for(let i=0; i < softSkills.length; i++) {
   skillsList.appendChild(skill);  
 }
 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/JKuffler/repos');
-githubRequest.send();
-githubRequest.addEventListener('load', function () { 
-  let repos = JSON.parse(this.response);
+fetch('https://api.github.com/users/JKuffler/repos')
+.then(r => r.json())
+.then( (data) => { 
+  const repos = data;
   console.log(repos);
   const projectSection = document.getElementById('projects');
   const projectsList = projectSection.querySelector('ul');
@@ -36,7 +35,7 @@ githubRequest.addEventListener('load', function () {
     project.innerHTML = `<a href=${repos[i].html_url} target='_blank' rel="noopener noreferrer">` + `  ${repos[i].name}  `.toString().slice(0, 22) +  `|Created| ` + new Date( `${repos[i].created_at}`).toDateString() + `</a>`;
     projectsList.appendChild(project);
   }
-});
+})
 
 const linkBadge = document.getElementById('link_badge');
 
